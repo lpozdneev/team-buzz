@@ -2980,6 +2980,30 @@ Layer: 94 Symbol</description>
 <port name="ISO_SPI" side="left" coord="0" direction="io"/>
 <port name="RELAY+" side="right" coord="0" direction="nc"/>
 <port name="RELAY-" side="right" coord="-2.54" direction="nc"/>
+<port name="CUR_SENSE" side="bottom" coord="5.08" direction="in"/>
+</ports>
+<variantdefs>
+</variantdefs>
+<parts>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</module>
+<module name="CURRENT_SENSOR" prefix="" dx="12.7" dy="7.62">
+<ports>
+<port name="IN" side="left" coord="0" direction="io"/>
+<port name="OUT" side="right" coord="0" direction="io"/>
+<port name="R" side="top" coord="2.54" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -3009,7 +3033,7 @@ Layer: 94 Symbol</description>
 <part name="CELL2" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="CELL1" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
 <part name="CELL0" library="HyTechSymbols" deviceset="BATTERY_1_CELL" device=""/>
-<part name="F1" library="HyTechSymbols" deviceset="FUSE" device=""/>
+<part name="FUSE1" library="HyTechSymbols" deviceset="FUSE" device=""/>
 <part name="K1" library="HyTechSymbols" deviceset="RELAY" device=""/>
 <part name="P+1" library="HyTechSupplies" deviceset="VCC" device=""/>
 <part name="S1" library="HyTechSymbols" deviceset="SWITCH_SPST" device=""/>
@@ -3019,7 +3043,6 @@ Layer: 94 Symbol</description>
 <sheet>
 <plain>
 <wire x1="154.94" y1="83.82" x2="160.02" y2="83.82" width="0.508" layer="156"/>
-<wire x1="160.02" y1="83.82" x2="160.02" y2="109.22" width="0.508" layer="156"/>
 <wire x1="144.78" y1="83.82" x2="139.7" y2="83.82" width="0.508" layer="156"/>
 <wire x1="129.54" y1="83.82" x2="124.46" y2="83.82" width="0.508" layer="156"/>
 <wire x1="114.3" y1="83.82" x2="109.22" y2="83.82" width="0.508" layer="156"/>
@@ -3033,23 +3056,29 @@ Layer: 94 Symbol</description>
 <wire x1="20.32" y1="73.66" x2="172.72" y2="73.66" width="0.508" layer="156"/>
 <wire x1="172.72" y1="73.66" x2="172.72" y2="96.52" width="0.508" layer="156"/>
 <wire x1="210.82" y1="106.68" x2="218.44" y2="106.68" width="0.508" layer="156"/>
-<wire x1="160.02" y1="109.22" x2="165.1" y2="109.22" width="0.508" layer="156"/>
+<wire x1="160.02" y1="127" x2="165.1" y2="127" width="0.508" layer="156"/>
 <wire x1="172.72" y1="96.52" x2="218.44" y2="96.52" width="0.508" layer="156"/>
 <wire x1="259.08" y1="101.6" x2="261.62" y2="101.6" width="0.508" layer="156"/>
-<wire x1="175.26" y1="106.68" x2="180.34" y2="106.68" width="0.508" layer="156"/>
-<wire x1="180.34" y1="106.68" x2="180.34" y2="109.22" width="0.508" layer="156"/>
 <wire x1="180.34" y1="109.22" x2="185.42" y2="109.22" width="0.508" layer="156"/>
 <wire x1="195.58" y1="106.68" x2="200.66" y2="106.68" width="0.508" layer="156"/>
+<wire x1="160.02" y1="83.82" x2="160.02" y2="93.98" width="0.508" layer="156"/>
+<wire x1="160.02" y1="114.3" x2="160.02" y2="127" width="0.508" layer="156"/>
+<wire x1="180.34" y1="109.22" x2="180.34" y2="124.46" width="0.508" layer="156"/>
+<wire x1="180.34" y1="124.46" x2="175.26" y2="124.46" width="0.508" layer="156"/>
+<wire x1="175.26" y1="124.46" x2="175.26" y2="121.92" width="0.508" layer="156"/>
 </plain>
 <moduleinsts>
 <moduleinst name="POWER_SUPPLY1" module="POWER_SUPPLY" x="238.76" y="101.6" rot="MR0">
 <attribute name="NAME" x="238.76" y="103.124" size="2.032" layer="95" rot="MR0" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="BMS1" module="BMS" x="55.88" y="124.46">
-<attribute name="NAME" x="55.88" y="125.984" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="BMS1" module="BMS" x="55.88" y="142.24">
+<attribute name="NAME" x="55.88" y="146.304" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="CONTROLLER1" module="CONTROLLER" x="111.76" y="124.46">
-<attribute name="NAME" x="111.76" y="125.73" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="CONTROLLER1" module="CONTROLLER" x="111.76" y="142.24">
+<attribute name="NAME" x="111.76" y="146.05" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
+<moduleinst name="CURRENT_SENSOR1" module="CURRENT_SENSOR" x="160.02" y="104.14" rot="R90">
+<attribute name="NAME" x="167.64" y="99.06" size="2.032" layer="95" rot="R90" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
@@ -3080,18 +3109,18 @@ Layer: 94 Symbol</description>
 <instance part="CELL0" gate="G$1" x="27.94" y="83.82" smashed="yes" rot="MR180">
 <attribute name="NAME" x="26.67" y="80.645" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="F1" gate="G$1" x="205.74" y="106.68" smashed="yes" rot="MR0">
+<instance part="FUSE1" gate="G$1" x="205.74" y="106.68" smashed="yes" rot="MR0">
 <attribute name="NAME" x="210.82" y="107.95" size="1.27" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="203.2" y="107.95" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="K1" gate="1" x="170.18" y="116.84" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="173.99" y="98.171" size="1.778" layer="96" rot="MR0"/>
-<attribute name="PART" x="173.99" y="100.33" size="1.778" layer="95" rot="MR0"/>
+<instance part="K1" gate="1" x="170.18" y="134.62" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="173.99" y="115.951" size="1.778" layer="96" rot="MR0"/>
+<attribute name="PART" x="173.99" y="118.11" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="P+1" gate="VCC" x="264.16" y="101.6" smashed="yes" rot="MR90"/>
 <instance part="S1" gate="SPST" x="190.5" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="195.58" y="111.76" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="195.58" y="114.3" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="200.66" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="U$1" gate="G$2" x="110.49" y="0" smashed="yes">
@@ -3103,7 +3132,13 @@ Layer: 94 Symbol</description>
 <busses>
 <bus name="B$1">
 <segment>
-<wire x1="76.2" y1="124.46" x2="91.44" y2="124.46" width="0.762" layer="92"/>
+<wire x1="76.2" y1="142.24" x2="91.44" y2="142.24" width="0.762" layer="92"/>
+</segment>
+</bus>
+<bus name="B$2">
+<segment>
+<wire x1="116.84" y1="127" x2="116.84" y2="106.68" width="0.762" layer="92"/>
+<wire x1="116.84" y1="106.68" x2="150.876" y2="106.68" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -3111,19 +3146,19 @@ Layer: 94 Symbol</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="CELL0" gate="G$1" pin="-"/>
-<wire x1="22.86" y1="83.82" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="83.82" x2="22.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C0-"/>
-<wire x1="43.18" y1="104.14" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="91.44" x2="43.18" y2="127" width="0.1524" layer="91"/>
 <junction x="22.86" y="83.82"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="35.56" y1="83.82" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C0_1"/>
-<wire x1="35.56" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="101.6" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="88.9" x2="45.72" y2="127" width="0.1524" layer="91"/>
 <junction x="35.56" y="83.82"/>
 </segment>
 </net>
@@ -3132,7 +3167,7 @@ Layer: 94 Symbol</description>
 <wire x1="50.8" y1="83.82" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C1_2"/>
-<wire x1="48.26" y1="86.36" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="86.36" x2="48.26" y2="127" width="0.1524" layer="91"/>
 <junction x="50.8" y="83.82"/>
 </segment>
 </net>
@@ -3141,7 +3176,7 @@ Layer: 94 Symbol</description>
 <wire x1="66.04" y1="83.82" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C2_3"/>
-<wire x1="50.8" y1="88.9" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="88.9" x2="50.8" y2="127" width="0.1524" layer="91"/>
 <junction x="66.04" y="83.82"/>
 </segment>
 </net>
@@ -3150,7 +3185,7 @@ Layer: 94 Symbol</description>
 <wire x1="81.28" y1="83.82" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C3_4"/>
-<wire x1="53.34" y1="91.44" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="127" width="0.1524" layer="91"/>
 <junction x="81.28" y="83.82"/>
 </segment>
 </net>
@@ -3159,7 +3194,7 @@ Layer: 94 Symbol</description>
 <wire x1="96.52" y1="83.82" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C4_5"/>
-<wire x1="55.88" y1="93.98" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="93.98" x2="55.88" y2="127" width="0.1524" layer="91"/>
 <junction x="96.52" y="83.82"/>
 </segment>
 </net>
@@ -3168,7 +3203,7 @@ Layer: 94 Symbol</description>
 <wire x1="111.76" y1="83.82" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C5_6"/>
-<wire x1="58.42" y1="96.52" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="96.52" x2="58.42" y2="127" width="0.1524" layer="91"/>
 <junction x="111.76" y="83.82"/>
 </segment>
 </net>
@@ -3177,14 +3212,14 @@ Layer: 94 Symbol</description>
 <wire x1="127" y1="83.82" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="127" y1="99.06" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
 <portref moduleinst="BMS1" port="C6_7"/>
-<wire x1="60.96" y1="99.06" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="99.06" x2="60.96" y2="127" width="0.1524" layer="91"/>
 <junction x="127" y="83.82"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <portref moduleinst="BMS1" port="C7_8"/>
-<wire x1="63.5" y1="109.22" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="127" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="101.6" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <junction x="142.24" y="83.82"/>
@@ -3193,7 +3228,7 @@ Layer: 94 Symbol</description>
 <net name="N$10" class="0">
 <segment>
 <portref moduleinst="BMS1" port="C8+"/>
-<wire x1="66.04" y1="109.22" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="127" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="CELL8" gate="G$1" pin="+"/>
 <wire x1="154.94" y1="104.14" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
@@ -3203,19 +3238,19 @@ Layer: 94 Symbol</description>
 <net name="N$11" class="0">
 <segment>
 <portref moduleinst="CONTROLLER1" port="RELAY+"/>
-<wire x1="132.08" y1="124.46" x2="177.8" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
-<wire x1="177.8" y1="124.46" x2="177.8" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="142.24" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <portref moduleinst="CONTROLLER1" port="RELAY-"/>
-<wire x1="132.08" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="121.92" x2="162.56" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="139.7" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="139.7" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="1"/>
-<wire x1="162.56" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
