@@ -5040,14 +5040,6 @@ Layer: 94 Symbol</description>
 <attribute name="ENGINEER" value="Arvind Srinivasan"/>
 <attribute name="FRAME_DESCRIPTION" value="Upper LTC6811 IC"/>
 </part>
-<part name="U$23" library="HyTechFrames" deviceset="FRAME_B" device="">
-<attribute name="ENGINEER" value="Arvind Srinivasan"/>
-<attribute name="FRAME_DESCRIPTION" value="Lower LTC6811 IC and Cell Thermistor Test Connection"/>
-</part>
-<part name="U$24" library="HyTechFrames" deviceset="FRAME_B" device="">
-<attribute name="ENGINEER" value="Arvind Srinivasan"/>
-<attribute name="FRAME_DESCRIPTION" value="Upper 9 Cell Connections and Cell Voltage Test Connection"/>
-</part>
 <part name="U$25" library="HyTechFrames" deviceset="FRAME_B" device="">
 <attribute name="ENGINEER" value="Arvind Srinivasan"/>
 <attribute name="FRAME_DESCRIPTION" value="Lower 9 Cell Connections"/>
@@ -5056,25 +5048,6 @@ Layer: 94 Symbol</description>
 <part name="X2" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2"/>
 </parts>
 <sheets>
-<sheet>
-<description>Upper 9 Cell Connections and Cell Voltage Test Connection</description>
-<plain>
-</plain>
-<instances>
-<instance part="U$24" gate="G$1" x="-431.8" y="0" smashed="yes"/>
-<instance part="U$24" gate="G$2" x="-168.91" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="-92.71" y="2.54" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="-73.66" y="22.86" size="2.54" layer="94"/>
-<attribute name="SHEET" x="-20.32" y="2.54" size="2.54" layer="94"/>
-<attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
-<attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 <sheet>
 <description>Lower 9 Cell Connections</description>
 <plain>
@@ -6426,94 +6399,42 @@ set chip address</text>
 </net>
 </nets>
 </sheet>
-<sheet>
-<description>Lower LTC6811 IC and Cell Thermistor Test Connection</description>
-<plain>
-</plain>
-<instances>
-<instance part="U$23" gate="G$1" x="-431.8" y="0" smashed="yes"/>
-<instance part="U$23" gate="G$2" x="-168.91" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="-92.71" y="2.54" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="-73.66" y="22.86" size="2.54" layer="94"/>
-<attribute name="SHEET" x="-20.32" y="2.54" size="2.54" layer="94"/>
-<attribute name="FRAME_DESCRIPTION" x="-102.87" y="10.16" size="2.54" layer="94"/>
-<attribute name="ENGINEER" x="-149.86" y="22.86" size="2.54" layer="94"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 </sheets>
 <errors>
-<approved hash="102,1,-251.46,25.4,V-,V-_A,,,,"/>
-<approved hash="102,1,-233.68,218.44,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,200.66,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,182.88,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,165.1,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,147.32,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,121.92,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,104.14,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,86.36,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,68.58,V-,V-_A,,,,"/>
-<approved hash="102,1,-215.9,50.8,V-,V-_A,,,,"/>
-<approved hash="102,1,-226.06,25.4,V-,V-_A,,,,"/>
-<approved hash="102,1,-233.68,236.22,V-,V-_A,,,,"/>
-<approved hash="102,2,-233.68,17.78,V-,V-_B,,,,"/>
-<approved hash="102,2,-215.9,213.36,V-,V-_B,,,,"/>
-<approved hash="102,2,-208.28,17.78,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,193.04,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,175.26,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,157.48,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,139.7,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,114.3,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,96.52,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,78.74,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,60.96,V-,V-_B,,,,"/>
-<approved hash="102,2,-198.12,43.18,V-,V-_B,,,,"/>
-<approved hash="102,2,-215.9,233.68,V-,V-_B,,,,"/>
-<approved hash="102,3,-236.22,111.76,V-,V-_B,,,,"/>
-<approved hash="102,3,-312.42,185.42,V-,V-_B,,,,"/>
-<approved hash="102,3,-246.38,149.86,V-,V-_B,,,,"/>
-<approved hash="102,3,-269.24,114.3,V-,V-_B,,,,"/>
-<approved hash="102,3,-139.7,152.4,V-,V-_B,,,,"/>
-<approved hash="102,3,-121.92,96.52,V-,V-_B,,,,"/>
-<approved hash="102,3,-121.92,76.2,V-,V-_B,,,,"/>
-<approved hash="102,3,-269.24,177.8,V-,V-_B,,,,"/>
-<approved hash="102,3,-259.08,177.8,V-,V-_B,,,,"/>
-<approved hash="102,3,-248.92,177.8,V-,V-_B,,,,"/>
-<approved hash="102,3,-238.76,177.8,V-,V-_B,,,,"/>
-<approved hash="102,3,-215.9,111.76,V-,V-_B,,,,"/>
-<approved hash="102,3,-139.7,132.08,V-,V-_B,,,,"/>
-<approved hash="102,3,-139.7,111.76,V-,V-_B,,,,"/>
-<approved hash="102,3,-121.92,86.36,V-,V-_B,,,,"/>
-<approved hash="102,3,-121.92,106.68,V-,V-_B,,,,"/>
-<approved hash="102,3,-129.54,127,V-,V-_B,,,,"/>
-<approved hash="102,3,-129.54,147.32,V-,V-_B,,,,"/>
-<approved hash="102,3,-129.54,167.64,V-,V-_B,,,,"/>
-<approved hash="102,3,-281.94,45.72,V-,V-_B,,,,"/>
-<approved hash="102,4,-233.68,114.3,V-,V-_A,,,,"/>
-<approved hash="102,4,-314.96,185.42,V-,V-_A,,,,"/>
-<approved hash="102,4,-251.46,149.86,V-,V-_A,,,,"/>
-<approved hash="102,4,-271.78,114.3,V-,V-_A,,,,"/>
-<approved hash="102,4,-160.02,152.4,V-,V-_A,,,,"/>
-<approved hash="102,4,-144.78,96.52,V-,V-_A,,,,"/>
-<approved hash="102,4,-144.78,76.2,V-,V-_A,,,,"/>
-<approved hash="102,4,-271.78,177.8,V-,V-_A,,,,"/>
-<approved hash="102,4,-261.62,177.8,V-,V-_A,,,,"/>
-<approved hash="102,4,-251.46,177.8,V-,V-_A,,,,"/>
-<approved hash="102,4,-241.3,177.8,V-,V-_A,,,,"/>
-<approved hash="102,4,-236.22,139.7,V-,V-_A,,,,"/>
-<approved hash="102,4,-160.02,132.08,V-,V-_A,,,,"/>
-<approved hash="102,4,-160.02,111.76,V-,V-_A,,,,"/>
-<approved hash="102,4,-152.4,86.36,V-,V-_A,,,,"/>
-<approved hash="102,4,-152.4,106.68,V-,V-_A,,,,"/>
-<approved hash="102,4,-152.4,147.32,V-,V-_A,,,,"/>
-<approved hash="102,4,-152.4,167.64,V-,V-_A,,,,"/>
-<approved hash="102,4,-152.4,127,V-,V-_A,,,,"/>
-<approved hash="102,4,-284.48,48.26,V-,V-_A,,,,"/>
-<approved hash="115,2,-269.24,215.9,V-_A,,,,,"/>
+<approved hash="102,1,-233.68,17.78,V-,V-_B,,,,"/>
+<approved hash="102,1,-215.9,213.36,V-,V-_B,,,,"/>
+<approved hash="102,1,-208.28,17.78,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,193.04,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,175.26,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,157.48,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,139.7,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,114.3,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,96.52,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,78.74,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,60.96,V-,V-_B,,,,"/>
+<approved hash="102,1,-198.12,43.18,V-,V-_B,,,,"/>
+<approved hash="102,1,-215.9,233.68,V-,V-_B,,,,"/>
+<approved hash="102,2,-236.22,111.76,V-,V-_B,,,,"/>
+<approved hash="102,2,-312.42,185.42,V-,V-_B,,,,"/>
+<approved hash="102,2,-246.38,149.86,V-,V-_B,,,,"/>
+<approved hash="102,2,-269.24,114.3,V-,V-_B,,,,"/>
+<approved hash="102,2,-139.7,152.4,V-,V-_B,,,,"/>
+<approved hash="102,2,-121.92,96.52,V-,V-_B,,,,"/>
+<approved hash="102,2,-121.92,76.2,V-,V-_B,,,,"/>
+<approved hash="102,2,-269.24,177.8,V-,V-_B,,,,"/>
+<approved hash="102,2,-259.08,177.8,V-,V-_B,,,,"/>
+<approved hash="102,2,-248.92,177.8,V-,V-_B,,,,"/>
+<approved hash="102,2,-238.76,177.8,V-,V-_B,,,,"/>
+<approved hash="102,2,-215.9,111.76,V-,V-_B,,,,"/>
+<approved hash="102,2,-139.7,132.08,V-,V-_B,,,,"/>
+<approved hash="102,2,-139.7,111.76,V-,V-_B,,,,"/>
+<approved hash="102,2,-121.92,86.36,V-,V-_B,,,,"/>
+<approved hash="102,2,-121.92,106.68,V-,V-_B,,,,"/>
+<approved hash="102,2,-129.54,127,V-,V-_B,,,,"/>
+<approved hash="102,2,-129.54,147.32,V-,V-_B,,,,"/>
+<approved hash="102,2,-129.54,167.64,V-,V-_B,,,,"/>
+<approved hash="102,2,-281.94,45.72,V-,V-_B,,,,"/>
+<approved hash="115,1,-269.24,215.9,V-_A,,,,,"/>
 <approved hash="118,1@CELL_VOLTAGE_FILTER+DRAIN,68.58,31.75,Net,V-,,,,"/>
 <approved hash="118,1@CELL_THERM_FILTER,-10.16,-11.43,Net,V-,,,,"/>
 </errors>
