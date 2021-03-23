@@ -3480,6 +3480,81 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <vertex x="0.5588" y="0"/>
 </polygon>
 </package>
+<package name="39281043">
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-4.7" y1="4.5" x2="4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="4.7" y1="4.5" x2="4.7" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-3.3" x2="4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-4.9" x2="-4.7" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-4.7" y1="-4.9" x2="-4.7" y2="4.5" width="0.254" layer="21"/>
+<wire x1="4.7" y1="-2.2" x2="4.7" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<text x="0" y="-5.08" size="1.27" layer="25" align="top-center">&gt;NAME</text>
+<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="1054051204">
+<smd name="4" x="-1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="1" x="1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="3.3" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="2" x="-1.25" y="0" dx="2.5" dy="1.24" layer="1" rot="R90"/>
+<smd name="PAD" x="-3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
+<smd name="PAD@2" x="3.52" y="-4.93" dx="1.1" dy="8.2" layer="1"/>
+<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="3" y2="0" width="0.127" layer="21"/>
+<wire x1="3" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="5" y1="0" x2="5" y2="-10" width="0.127" layer="21"/>
+<wire x1="5" y1="-10" x2="2" y2="-10" width="0.127" layer="21"/>
+<wire x1="2" y1="-10" x2="2" y2="-11" width="0.127" layer="21"/>
+<wire x1="2" y1="-11" x2="-2" y2="-11" width="0.127" layer="21"/>
+<wire x1="-2" y1="-10" x2="-5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5" y1="-10" x2="-5" y2="0" width="0.127" layer="21"/>
+<wire x1="-5" y1="0" x2="-3" y2="0" width="0.127" layer="21"/>
+<wire x1="-3" y1="0" x2="-3" y2="5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-10" x2="-2" y2="-11" width="0.127" layer="21"/>
+</package>
+<package name="1053101204">
+<description>4 Pin Nano-Fit™ Vertical Header, Through Hole, Dual Row
+&lt;br&gt;
+&lt;a href="https://www.molex.com/molex/products/part-detail/pcb_headers/1053101204"&gt;Part&lt;\a&gt;
+&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/sd/1053101204_sd.pdf"&gt;Footprint&lt;\a&gt;</description>
+<pad name="1" x="-1.25" y="0" drill="1.2" first="yes"/>
+<pad name="2" x="1.25" y="0" drill="1.2"/>
+<pad name="3" x="-1.25" y="2.5" drill="1.2"/>
+<pad name="4" x="1.25" y="2.5" drill="1.2"/>
+<wire x1="-2.97" y1="4.24" x2="2.97" y2="4.24" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="4.24" x2="-2.97" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-2.97" y1="-1.74" x2="-2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.74" x2="2.97" y2="-1.74" width="0.127" layer="21"/>
+<wire x1="2.97" y1="-1.74" x2="2.97" y2="4.24" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.74" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-4.6" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
+<hole x="0" y="-1.34" drill="1.3"/>
+<rectangle x1="-3.175" y1="-5.08" x2="3.175" y2="-1.905" layer="39"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="40"/>
+<rectangle x1="-3.175" y1="-1.905" x2="3.175" y2="4.445" layer="39"/>
+</package>
+<package name="AUTOSPORT_12-04">
+<circle x="0" y="0" radius="8.72" width="0.127" layer="21"/>
+<pad name="1" x="0" y="3.81" drill="2"/>
+<pad name="2" x="3.7084" y="0.889" drill="2"/>
+<pad name="3" x="0" y="-2.1082" drill="2"/>
+<pad name="4" x="-3.7084" y="0.889" drill="2"/>
+<hole x="-10.2884" y="-10.2884" drill="3.3"/>
+<hole x="10.2884" y="10.2884" drill="3.3"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="13" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEENSY_4.1_SIMPLE">
@@ -3869,6 +3944,17 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <vertex x="-2.54" y="-1.27"/>
 <vertex x="0" y="0"/>
 </polygon>
+</symbol>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4441,6 +4527,67 @@ general purpose rectifier</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CONNECTOR-4" prefix="X">
+<description>&lt;b&gt;Mini-Fit Junior connector 4 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="39281043">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="NANO-FIT_RIGHT_ANGLE-4-SURFACE" package="1054051204">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NANO-FIT-VERTICAL-4" package="1053101204">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AUTOSPORT" package="AUTOSPORT_12-04">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSupplies">
@@ -4633,6 +4780,9 @@ general purpose rectifier</description>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="D103" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="GND21" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
+<part name="GND22" library="HyTechSupplies" deviceset="GND" device=""/>
+<part name="P+14" library="HyTechSupplies" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4976,6 +5126,25 @@ symbol are not correct, but the circuit should still work.</text>
 <instance part="GND21" gate="1" x="218.44" y="210.82" smashed="yes">
 <attribute name="VALUE" x="215.9" y="208.28" size="1.778" layer="96"/>
 </instance>
+<instance part="X1" gate="-1" x="289.56" y="116.84" smashed="yes" rot="MR0">
+<attribute name="NAME" x="287.02" y="116.078" size="1.524" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="295.402" y="120.777" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="X1" gate="-2" x="289.56" y="114.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="287.02" y="113.538" size="1.524" layer="95" rot="MR0"/>
+</instance>
+<instance part="X1" gate="-3" x="289.56" y="111.76" smashed="yes" rot="MR0">
+<attribute name="NAME" x="287.02" y="110.998" size="1.524" layer="95" rot="MR0"/>
+</instance>
+<instance part="X1" gate="-4" x="289.56" y="109.22" smashed="yes" rot="MR0">
+<attribute name="NAME" x="287.02" y="108.458" size="1.524" layer="95" rot="MR0"/>
+</instance>
+<instance part="GND22" gate="1" x="302.26" y="111.76" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="304.8" y="109.22" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="P+14" gate="1" x="302.26" y="121.92" smashed="yes">
+<attribute name="VALUE" x="304.8" y="127" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5140,6 +5309,11 @@ symbol are not correct, but the circuit should still work.</text>
 <wire x1="226.06" y1="215.9" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="218.44" y1="213.36" x2="218.44" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="292.1" y1="114.3" x2="302.26" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5554,6 +5728,11 @@ symbol are not correct, but the circuit should still work.</text>
 <wire x1="218.44" y1="175.26" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
 <label x="215.9" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="A3"/>
+<wire x1="370.84" y1="187.96" x2="373.38" y2="187.96" width="0.1524" layer="91"/>
+<label x="373.38" y="187.96" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -5583,12 +5762,26 @@ symbol are not correct, but the circuit should still work.</text>
 <label x="325.12" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$5" gate="G$1" pin="6"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="292.1" y1="111.76" x2="297.18" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="111.76" x2="297.18" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="106.68" x2="299.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="299.72" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="CANH" class="0">
 <segment>
 <wire x1="327.66" y1="111.76" x2="325.12" y2="111.76" width="0.1524" layer="91"/>
 <label x="325.12" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$5" gate="G$1" pin="7"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-4" pin="S"/>
+<wire x1="292.1" y1="109.22" x2="294.64" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="109.22" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="104.14" x2="299.72" y2="104.14" width="0.1524" layer="91"/>
+<label x="299.72" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
@@ -5958,6 +6151,12 @@ symbol are not correct, but the circuit should still work.</text>
 <wire x1="345.44" y1="259.08" x2="345.44" y2="256.54" width="0.1524" layer="91"/>
 <junction x="345.44" y="256.54"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="292.1" y1="116.84" x2="302.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="116.84" x2="302.26" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="P+14" gate="1" pin="+12V"/>
+</segment>
 </net>
 <net name="RELAY_CTRL" class="0">
 <segment>
@@ -5996,6 +6195,14 @@ symbol are not correct, but the circuit should still work.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,325.12,106.68,GND,N$8,,,,"/>
+<approved hash="201,1,325.12,106.68,GND,GND\, N$8,,,,"/>
+<approved hash="104,1,350.52,256.54,U$10,IN,+12V,,,"/>
+<approved hash="104,1,365.76,256.54,U$10,OUT,+5V,,,"/>
+<approved hash="106,1,325.12,106.68,N$8,,,,,"/>
+<approved hash="106,1,327.66,109.22,N$8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
