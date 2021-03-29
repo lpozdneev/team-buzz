@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -1854,10 +1854,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="114.554" y="25.273" size="0.8128" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="117.475" y="25.146" size="0.8128" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R9" library="HyTechDevices" package="0603-RES" value="0" x="148.844" y="74.168" smashed="yes">
-<attribute name="NAME" x="145.288" y="74.422" size="0.8128" layer="25" font="vector"/>
-<attribute name="VALUE" x="145.288" y="73.279" size="0.8128" layer="27" font="vector"/>
-</element>
 <element name="THERM1" library="HyTechDevices" package="1053091202" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="15.748" y="68.834" smashed="yes" rot="R270"/>
 <element name="THERM2" library="HyTechDevices" package="1053091202" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="15.748" y="61.214" smashed="yes" rot="R270"/>
 <element name="THERM3" library="HyTechDevices" package="1053091202" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="15.748" y="53.594" smashed="yes" rot="R270"/>
@@ -2456,16 +2452,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="158.6198" y1="81.6578" x2="158.496" y2="81.534" width="0.254" layer="1"/>
 <wire x1="158.496" y1="81.534" x2="158.496" y2="79.844" width="0.254" layer="1"/>
 </signal>
-<signal name="N$9">
-<contactref element="U$4" pad="12"/>
-<contactref element="R9" pad="2"/>
-<wire x1="159.1480125" y1="84.721" x2="158.6638" y2="84.721" width="0.254" layer="1"/>
-<wire x1="158.6638" y1="84.721" x2="158.6198" y2="84.765" width="0.254" layer="1"/>
-<wire x1="159.512" y1="84.3570125" x2="159.1480125" y2="84.721" width="0.254" layer="1"/>
-<wire x1="159.512" y1="77.7507875" x2="159.512" y2="84.3570125" width="0.254" layer="1"/>
-<wire x1="149.694" y1="74.168" x2="155.9292125" y2="74.168" width="0.254" layer="1"/>
-<wire x1="155.9292125" y1="74.168" x2="159.512" y2="77.7507875" width="0.254" layer="1"/>
-</signal>
 <signal name="ALERT_INA">
 <contactref element="U$4" pad="7"/>
 <contactref element="U$2" pad="A3"/>
@@ -2769,7 +2755,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="N$12">
 <contactref element="U$8" pad="S"/>
-<contactref element="R9" pad="1"/>
 <contactref element="U$4" pad="3"/>
 <contactref element="U$4" pad="1"/>
 <contactref element="U$4" pad="2"/>
@@ -2778,11 +2763,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="153.0842" y1="88.307" x2="153.0842" y2="87.365" width="0.508" layer="1"/>
 <wire x1="153.0842" y1="87.365" x2="153.0842" y2="86.715" width="0.508" layer="1"/>
 <wire x1="153.0842" y1="87.365" x2="153.0842" y2="86.065" width="0.508" layer="1"/>
-<via x="144.272" y="76.962" extent="1-16" drill="0.35"/>
-<wire x1="144.272" y1="86.2076" x2="144.272" y2="76.962" width="0.254" layer="16"/>
 <wire x1="144.272" y1="86.2076" x2="145.288" y2="87.2236" width="0.254" layer="16"/>
-<wire x1="147.994" y1="74.168" x2="147.066" y2="74.168" width="0.254" layer="1"/>
-<wire x1="144.272" y1="76.962" x2="147.066" y2="74.168" width="0.254" layer="1"/>
 </signal>
 <signal name="+12V">
 <contactref element="12V_IN" pad="1"/>
