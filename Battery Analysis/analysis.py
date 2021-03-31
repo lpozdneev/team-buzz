@@ -30,16 +30,10 @@ ax1.set_xlim([100, 0])
 ax1.set_xlabel('State of Charge (SOC)')
 ax1.set_ylabel('Open Circuit Voltage (OCV)')
 
-
-
 ax2.set_title("DCIR v. SOC")
 ax2.set_xlim([100, 0])
 ax2.set_xlabel('State of Charge (SOC)')
 ax2.set_ylabel('DC Internal Resistance')
-
-
-
-
 
 for key, item in df_cell_test_data_grouped:
     ax1.plot(item['SOC'].tolist(), item['OCV'].tolist())
