@@ -19,7 +19,7 @@
 #define S_UPLOAD_COMPLETE  42
 
 
-volatile int current_state = 0;
+volatile int current_state = S_IDLE;
 
 
 void setup() {
