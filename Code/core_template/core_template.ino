@@ -1,8 +1,3 @@
-#include <font_Arial.h>
-#include <font_ArialBold.h>
-#include <ILI9341_t3.h>
-
-
 // Define States
 #define S_IDLE 10
 
